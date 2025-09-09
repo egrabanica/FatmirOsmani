@@ -1,0 +1,23 @@
+/*
+ *   Copyright (c) 2025 
+ *   All rights reserved.
+ */
+@import "tailwindcss";
+
+@layer base{
+  :root{
+    --navy:#0a1e4b;
+    --navy-900:#081c44;
+    --blue:#39b6f0;
+    --pink:#e61f78;
+  }
+  html,body,#root{height:100%}
+  html,body{ overflow-x:hidden }
+  body{ font-family:'Manrope',system-ui,Segoe UI,Roboto,Arial,sans-serif; scroll-behavior:smooth; }
+  body{ @apply text-slate-900 bg-white antialiased; }
+  h1,h2,h3,h4{ @apply text-[#0a1e4b]; }
+}
+
+@layer utilities{
+  .angle-31{ transform: skewY(-31deg); }
+}
